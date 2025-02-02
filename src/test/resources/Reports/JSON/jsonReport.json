@@ -1,0 +1,792 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 809069300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add the baseURI",
+            "match": {
+              "location": "StepDefinition.i_add_the_baseURI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-30T11:16:40.725Z",
+        "line": 23,
+        "name": "To validate the post request and response",
+        "description": "",
+        "id": "to-validate-the-jira-responses;to-validate-the-post-request-and-response;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 508774100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Payload of \"User Not able to login1\" and \"Login functionality is not working1\" needs to be added for POST Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User Not able to login1\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Login functionality is not working1\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.payload_of_and_needs_to_be_added_for_POST_Request(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2890087400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Call \"createissue\" api with \"POST\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createissue\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.call_api_with_HTTP_method(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 37610000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Response should have the status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.response_should_have_the_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2198600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Response body should contain \"self\" key as \"arun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"self\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"arun\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinition.response_body_should_contain_key_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4249400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add the baseURI",
+            "match": {
+              "location": "StepDefinition.i_add_the_baseURI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-30T11:16:44.991Z",
+        "line": 24,
+        "name": "To validate the post request and response",
+        "description": "",
+        "id": "to-validate-the-jira-responses;to-validate-the-post-request-and-response;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6534800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Payload of \"User Not able to login2\" and \"Login functionality is not working2\" needs to be added for POST Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User Not able to login2\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Login functionality is not working2\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.payload_of_and_needs_to_be_added_for_POST_Request(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000795800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Call \"createissue\" api with \"POST\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createissue\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.call_api_with_HTTP_method(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2402300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Response should have the status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.response_should_have_the_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 767300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Response body should contain \"self\" key as \"arun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"self\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"arun\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinition.response_body_should_contain_key_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5630500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add the baseURI",
+            "match": {
+              "location": "StepDefinition.i_add_the_baseURI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-30T11:16:46.007Z",
+        "line": 25,
+        "name": "To validate the post request and response",
+        "description": "",
+        "id": "to-validate-the-jira-responses;to-validate-the-post-request-and-response;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12014400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Payload of \"User Not able to login3\" and \"Login functionality is not working3\" needs to be added for POST Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User Not able to login3\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Login functionality is not working3\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.payload_of_and_needs_to_be_added_for_POST_Request(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1203984800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Call \"createissue\" api with \"POST\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createissue\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.call_api_with_HTTP_method(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1596800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Response should have the status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.response_should_have_the_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 774200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Response body should contain \"self\" key as \"arun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"self\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"arun\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinition.response_body_should_contain_key_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7147700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add the baseURI",
+            "match": {
+              "location": "StepDefinition.i_add_the_baseURI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-30T11:16:47.233Z",
+        "line": 26,
+        "name": "To validate the post request and response",
+        "description": "",
+        "id": "to-validate-the-jira-responses;to-validate-the-post-request-and-response;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 18086500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Payload of \"User Not able to login4\" and \"Login functionality is not working4\" needs to be added for POST Request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User Not able to login4\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"Login functionality is not working4\"",
+                  "offset": 41
+                }
+              ],
+              "location": "StepDefinition.payload_of_and_needs_to_be_added_for_POST_Request(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1198651700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Call \"createissue\" api with \"POST\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"createissue\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.call_api_with_HTTP_method(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3797500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Response should have the status code 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.response_should_have_the_status_code(Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1076600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Response body should contain \"self\" key as \"arun\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"self\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"arun\"",
+                  "offset": 43
+                }
+              ],
+              "location": "StepDefinition.response_body_should_contain_key_as(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9271100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add the baseURI",
+            "match": {
+              "location": "StepDefinition.i_add_the_baseURI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-30T11:16:48.466Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1015158900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeMethod()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "To validate the update issue with api PUT request",
+        "description": "",
+        "id": "to-validate-the-jira-responses;to-validate-the-update-issue-with-api-put-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 36315000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Payload need to added for PUT request",
+            "match": {
+              "location": "StepDefinition.payload_need_to_added_for_PUT_request()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 771148400,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Call \"updateissue\" api with \"PUT\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"updateissue\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"PUT\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.call_api_with_HTTP_method(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1355900,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "Response should have the status code 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.response_should_have_the_status_code(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@put"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5150700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add the baseURI",
+            "match": {
+              "location": "StepDefinition.i_add_the_baseURI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-30T11:16:50.301Z",
+        "line": 41,
+        "name": "To validate the get issue with api GET request",
+        "description": "",
+        "id": "to-validate-the-jira-responses;to-validate-the-get-issue-with-api-get-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1729003800,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Call \"getissue\" api with \"GET\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"getissue\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"GET\"",
+                  "offset": 25
+                }
+              ],
+              "location": "StepDefinition.call_api_with_HTTP_method(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1668800,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Response should have the status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.response_should_have_the_status_code(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 13363600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I add the baseURI",
+            "match": {
+              "location": "StepDefinition.i_add_the_baseURI()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-01-30T11:16:52.039Z",
+        "before": [
+          {
+            "result": {
+              "duration": 821965400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.beforeMethod()"
+            }
+          }
+        ],
+        "line": 49,
+        "name": "To validate the get issue with api DELETE request",
+        "description": "",
+        "id": "to-validate-the-jira-responses;to-validate-the-get-issue-with-api-delete-request",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 801457000,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "Call \"deleteissue\" api with \"DELETE\" HTTP method",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deleteissue\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 28
+                }
+              ],
+              "location": "StepDefinition.call_api_with_HTTP_method(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2897100,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Response should have the status code 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 37
+                }
+              ],
+              "location": "StepDefinition.response_should_have_the_status_code(Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@delete"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the Jira Responses",
+    "description": "",
+    "id": "to-validate-the-jira-responses",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/JiraAPI.feature",
+    "tags": [
+      {
+        "name": "@E2E",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

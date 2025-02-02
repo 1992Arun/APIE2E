@@ -1,5 +1,5 @@
-Request method:	POST
-Request URI:	https://arun12.atlassian.net/rest/api/2/issue/
+Request method:	DELETE
+Request URI:	https://arun12.atlassian.net/rest/api/2/issue/SCRUM-223
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -9,41 +9,27 @@ Headers:		Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "fields": {
-        "project": {
-            "key": "SCRUM"
-        },
-        "issuetype": {
-            "name": "Bug"
-        },
-        "description": "Product is not listed under the Electronis created with RestAssued",
-        "summary": "RestAssured builderClass practice"
-    }
-}
-HTTP/1.1 201 Created
-Date: Sat, 25 Jan 2025 17:40:39 GMT
+Body:			<none>
+HTTP/1.1 204 No Content
 Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Date: Thu, 30 Jan 2025 11:16:52 GMT
 Server: AtlassianEdge
 Timing-Allow-Origin: *
-X-Arequestid: 404fc80f4cc3729be4a51a482d9c7c71
-Set-Cookie: atlassian.xsrf.token=ef64603996cbd57ab84c650785d15db196fb0f3f_lin; Path=/; SameSite=None; Secure
+X-Arequestid: fdf22ac9ab7cfc9eb8501533534b3aca
+Set-Cookie: atlassian.xsrf.token=af6aeb13c8e00fdc29fc2715f2da37287e7875df_lin; Path=/; SameSite=None; Secure
 X-Aaccountid: 712020%3Aba745a0b-5238-4823-8ef5-91ab9c135e38
 Cache-Control: no-cache, no-store, no-transform
 Vary: Accept-Encoding
 X-Content-Type-Options: nosniff
 X-Xss-Protection: 1; mode=block
-Atl-Traceid: 06b963d5046e47c4bb211942a87271e7
-Atl-Request-Id: 06b963d5-046e-47c4-bb21-1942a87271e7
+Atl-Traceid: 3fee4e0ceab14d6990a8b16293ff52bb
+Atl-Request-Id: 3fee4e0c-eab1-4d69-90a8-b16293ff52bb
 Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
 Report-To: {"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}
 Nel: {"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}
-Server-Timing: atl-edge;dur=612,atl-edge-internal;dur=14,atl-edge-upstream;dur=599,atl-edge-pop;desc="aws-ap-south-1"
-Transfer-Encoding: chunked
-
-{
-    "id": "10180",
-    "key": "SCRUM-175",
-    "self": "https://arun12.atlassian.net/rest/api/2/issue/10180"
-}
+X-Cache: Miss from cloudfront
+Via: 1.1 af8f682f2e2bec27d0249aa0a656ea8e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MAA51-C2
+X-Amz-Cf-Id: dfd13foQ1svyDPwq59nJ9ZVXyLpdJWQMY7XJQIrXeSVkYIwwxH2FhQ==
+Server-Timing: cdn-cache-miss,cdn-pop;desc="MAA51-C2",cdn-rid;desc="dfd13foQ1svyDPwq59nJ9ZVXyLpdJWQMY7XJQIrXeSVkYIwwxH2FhQ==",cdn-downstream-fbl;dur=671,cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=73,cdn-upstream-fbl;dur=666,atl-edge;dur=566,atl-edge-internal;dur=15,atl-edge-upstream;dur=552,atl-edge-pop;desc="aws-ap-south-1"

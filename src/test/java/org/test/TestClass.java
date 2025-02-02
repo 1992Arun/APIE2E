@@ -7,6 +7,7 @@ import org.json.simple.parser.ParseException;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.postresPojo.Parent;
+import org.utility.APIRequests;
 import org.utility.Builder;
 
 import io.restassured.RestAssured;
@@ -15,8 +16,20 @@ import io.restassured.response.Response;
 
 public class TestClass extends Builder {
 
+	
+	public static void main(String[] args) {
+		
+		APIRequests req = APIRequests.deleteissue;
+		
+		System.out.println(req.getResource());
+		
+		
+		
+	}
+	
+	
 	@Ignore
-	@Test()
+	@Test() 
 	public void test1() {
 
 		Response response = RestAssured.given().spec(gerRequestSpec()).when().get("rest/api/2/search?jql=assignee=Arun")
@@ -34,13 +47,13 @@ public class TestClass extends Builder {
 		
 	}
 
-	
+	@Ignore
 	@Test
 	public void test2() throws ParseException {
 
 		Response response = RestAssured.given()
 
-				.spec(gerRequestSpec()).body(postRequestBody()).when().post("rest/api/2/issue/").then().assertThat()
+				.spec(gerRequestSpec()).body(postRequestBody("","")).when().post("rest/api/2/issue/").then().assertThat()
 				.spec(getResponseSpec(201))
 				.body("self", Matchers.containsString("https://arun12.atlassian.net/rest/api/2/issue"))
 				.body("key", Matchers.containsString("SCRUM"))

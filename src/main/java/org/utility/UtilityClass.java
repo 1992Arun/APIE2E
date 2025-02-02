@@ -1,7 +1,9 @@
 package org.utility;
 
+import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Properties;
 
@@ -15,6 +17,8 @@ import org.putPojo.Parent;
 import org.putPojo.Update;
 
 import io.restassured.response.Response;
+import net.masterthought.cucumber.Configuration;
+import net.masterthought.cucumber.ReportBuilder;
 
 public class UtilityClass {
 	
@@ -61,7 +65,7 @@ public static String getResponseBody(Response response) {
  
  }
  
- public static PostRequest postRequestBody()  {
+ public static PostRequest postRequestBody(String Desc, String summery)  {
 	 
 	
 	 
@@ -124,6 +128,33 @@ public static String getResponseBody(Response response) {
 		
 		
 	}
+	
+	public static void getJVMReport(String Json) {
+		
+		File f = new File(System.getProperty("user.dir")+"\\src\\test\\resources\\Reports");
+		
+		Configuration conf = new Configuration(f, "JIRA API");
+		
+		conf.addClassifications("UserName", System.getProperty("user.name"));
+		
+		List<String> li = new LinkedList();
+		
+		li.add(Json);
+		
+		ReportBuilder rb= new ReportBuilder(li, conf);
+		
+		rb.generateReports();
+		
+		
+	}
 
+	
+	public static void main(String[] args) {
+		
+	
+		
+		System.out.println(getProperty("BaseURI"));
+		
+	}
 
 }
